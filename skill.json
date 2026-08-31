@@ -1,0 +1,41 @@
+{
+  "name": "genpark-autonomous-inbox-triage-email-dispatcher-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous inbox triage email dispatcher classifying incoming messages, detecting sentiment, and synthesizing contextual drafts.",
+  "author": "genpark",
+  "category": "email-automation",
+  "tags": [
+    "email-agent",
+    "inbox-triage",
+    "smart-reply",
+    "email-organizer",
+    "vip-priority-routing"
+  ],
+  "inputs": {
+    "sender_email": {
+      "type": "string"
+    },
+    "email_subject": {
+      "type": "string"
+    },
+    "email_body_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "triage_event_id": {
+      "type": "string"
+    },
+    "urgency_priority_level": {
+      "type": "string"
+    },
+    "auto_dispatch_action": {
+      "type": "string"
+    },
+    "audit_trail_log_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
